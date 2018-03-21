@@ -33,6 +33,7 @@ which is an ideal tool for programming from entry and even to advanced programmi
 ![image](https://github.com/DFRobot/pxt-joystick/tree/master/image/compare.png)
 ![image](https://github.com/DFRobot/pxt-joystick/tree/master/image/pressedZ.png)
 ![image](https://github.com/DFRobot/pxt-joystick/tree/master/image/ispressedZ.png)
+![image](https://github.com/DFRobot/pxt-gamePad/blob/master/image/5.png)
 
 
 
