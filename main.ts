@@ -119,22 +119,29 @@ namespace joystick {
 
     //% blockId=joystick_compare block="joystick|%read_|%compare_|%value_"
     //% value_.min=-10 value_.max=10
-    export function joystick_compare(read_: read, compare_: compare, value_: number): boolean { 
+    export function joystick_compare(read_: XY_Pin, compare_: compare, value_: number): boolean { 
         if (!PIN_INIT) { 
             PinInit();
         }
+        let temp;
+        if (read_ == XY_Pin.P1) {
+            temp = (pins.analogReadPin(AnalogPin.P1) - 512) / 50;
+        }
+        else if (read_ == XY_Pin.P2) { 
+            temp = (pins.analogReadPin(AnalogPin.P2) - 512) / 50;
+        }
         if (compare_ == 1) { 
-            if (read_ > value_) { 
+            if (temp > value_) { 
                 return true;
             }
         }
         if (compare_ == 2) { 
-            if (read_ == value_) { 
+            if (temp == value_) { 
                 return true;
             }
         }
         if (compare_ == 3) { 
-            if (read_ < value_) { 
+            if (temp < value_) { 
                 return true;
             }
         }
@@ -153,7 +160,6 @@ namespace joystick {
     //% blockId=action block="joystick on %pin " blockGap=8
     export function action(pin: XY_Pin,cb: (packet: Packet) => void) {
         Shake(() => {
-            init();
             if (!PIN_INIT) { 
                 PinInit();
             }
