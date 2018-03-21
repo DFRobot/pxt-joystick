@@ -1,7 +1,6 @@
 # joystick
 
 Micro:bit joystick expansion board.
-![image](https://github.com/DFRobot/pxt-joystick/image/)
 ---------------------------------------------------------
 
 ## Table of Contents
