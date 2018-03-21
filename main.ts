@@ -66,8 +66,8 @@ namespace joystick {
     }
 
     export function PinInit(): void { 
-//        pins.setPull(DigitalPin.P1, PinPullMode.PullNone);
-//        pins.setPull(DigitalPin.P2, PinPullMode.PullNone);
+        pins.setPull(DigitalPin.P1, PinPullMode.PullNone);
+        pins.setPull(DigitalPin.P2, PinPullMode.PullNone);
         pins.setPull(DigitalPin.P8, PinPullMode.PullNone);
         pins.setPull(DigitalPin.P5, PinPullMode.PullNone);
         pins.setPull(DigitalPin.P11, PinPullMode.PullNone);
