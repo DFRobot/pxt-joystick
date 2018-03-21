@@ -123,12 +123,12 @@ namespace joystick {
         if (!PIN_INIT) { 
             PinInit();
         }
-        let temp = 1;
+        let temp=0;
         if (read_ == XY_Pin.P1) {
-            temp = 1;
+            temp = (pins.analogReadPin(AnalogPin.P1) - 512) / 50;
         }
         else if (read_ == XY_Pin.P2) { 
-            temp = 2;
+            temp = (pins.analogReadPin(AnalogPin.P2) - 512) / 50;
         }
         if (compare_ == 1) { 
             if (temp > value_) { 
