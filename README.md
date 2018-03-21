@@ -25,13 +25,13 @@ which is an ideal tool for programming from entry and even to advanced programmi
 ![image](https://github.com/DFRobot/pxt-joystick/blob/master/image/led.png)
 
 ### 2.Vibration motor control
-![image](https://github.com/DFRobot/pxt-joystick/blob/master/image/vibratorMotor.png)
-![image](https://github.com/DFRobot/pxt-joystick/blob/master/image/vibratorMotorctr.png)
+![image](https://github.com/DFRobot/pxt-joystick/blob/master/image/vibratorMotor.png)<br>
+![image](https://github.com/DFRobot/pxt-joystick/blob/master/image/vibratorMotorctr.png)<br>
 
 ### 3.joystick control
-![image](https://github.com/DFRobot/pxt-joystick/blob/master/image/detectXY.png)
-![image](https://github.com/DFRobot/pxt-joystick/blob/master/image/compare.png)
-![image](https://github.com/DFRobot/pxt-joystick/blob/master/image/pressedZ.png)
+![image](https://github.com/DFRobot/pxt-joystick/blob/master/image/detectXY.png)<br>
+![image](https://github.com/DFRobot/pxt-joystick/blob/master/image/compare.png)<br>
+![image](https://github.com/DFRobot/pxt-joystick/blob/master/image/pressedZ.png)<br>
 ![image](https://github.com/DFRobot/pxt-joystick/blob/master/image/ispressedZ.png)
 
 
