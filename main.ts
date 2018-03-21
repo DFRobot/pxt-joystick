@@ -124,7 +124,12 @@ namespace joystick {
             PinInit();
         }
         let temp = 1;
-
+        if (read_ == XY_Pin.P1) {
+            temp = 1;
+        }
+        else if (read_ == XY_Pin.P2) { 
+            temp = 2;
+        }
         if (compare_ == 1) { 
             if (temp > value_) { 
                 return true;
