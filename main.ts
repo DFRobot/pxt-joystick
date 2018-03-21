@@ -125,10 +125,10 @@ namespace joystick {
         }
         let temp;
         if (read_ == XY_Pin.P1) {
-            temp = (pins.analogReadPin(AnalogPin.P1) - 512) / 50;
+            temp = 1;
         }
         else if (read_ == XY_Pin.P2) { 
-            temp = (pins.analogReadPin(AnalogPin.P2) - 512) / 50;
+            temp = 2;
         }
         if (compare_ == 1) { 
             if (temp > value_) { 
