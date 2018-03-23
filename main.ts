@@ -147,7 +147,7 @@ namespace joystick {
         return false;
     }
 
-    //% blockId=getXY block="joystick on |%pin|" 
+    //% blockId=getXY block="get joystick on |%pin|" 
     export function getXY(pin: XY_Pin): number { 
         let val=0;
         if (pin == XY_Pin.P1) {
