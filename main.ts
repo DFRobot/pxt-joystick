@@ -150,7 +150,7 @@ namespace joystick {
 
     //% blockId=getXY block="joystick on |%pin|" 
     export function getXY(pin: XY_Pin): number { 
-        let val;
+        let val=0;
         if (pin == XY_Pin.P1) {
             val = (pins.analogReadPin(AnalogPin.P1) - 512) / 50;
         }

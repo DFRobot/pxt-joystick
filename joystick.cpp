@@ -13,8 +13,8 @@ namespace joystick {
     // TODO: fix this issue in the DAL itself
 #define ALLOC_PIN_BUTTON(id) new MicroBitButton(getPin(id)->name, id, MICROBIT_BUTTON_ALL_EVENTS, PullUp);
     ALLOC_PIN_BUTTON(MICROBIT_ID_IO_P8)
-//    ALLOC_PIN_BUTTON(MICROBIT_ID_IO_P1)
-//    ALLOC_PIN_BUTTON(MICROBIT_ID_IO_P2)
+    ALLOC_PIN_BUTTON(MICROBIT_ID_IO_P1)
+    ALLOC_PIN_BUTTON(MICROBIT_ID_IO_P2)
 #undef ALLOC_PIN_BUTTON
 
         initialized = true;
