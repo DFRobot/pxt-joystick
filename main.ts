@@ -117,7 +117,6 @@ namespace joystick {
         return;
     }
 
-    //% blockId=joystick_compare block="joystick|%read_|%compare_|%value_"
     //% value_.min=-10 value_.max=10
     export function joystick_compare(read_: XY_Pin, compare_: compare, value_: number): boolean { 
         if (!PIN_INIT) { 
