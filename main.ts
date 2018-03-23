@@ -147,6 +147,19 @@ namespace joystick {
         }
         return false;
     }
+
+    //% blockId=getXY block="joystick on |%pin|" 
+    export function getXY(pin: XY_Pin): number { 
+        let val;
+        if (pin == XY_Pin.P1) {
+            val = (pins.analogReadPin(AnalogPin.P1) - 512) / 50;
+        }
+        else if (pin == XY_Pin.P2) { 
+            val = (pins.analogReadPin(AnalogPin.P2) - 512) / 50;
+        }
+        return val;
+    }
+
     
     //% shim=joystick::Shake
     export function Shake(a: Action): void { 
